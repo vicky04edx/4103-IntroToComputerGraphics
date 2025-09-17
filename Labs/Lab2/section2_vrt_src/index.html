@@ -1,0 +1,58 @@
+<!-- <!DOCTYPE html> 
+<html>
+    
+    <body>
+        <canvas width="500" height="500" id="glCanvas"/>
+        <script>
+            var canvas = document.getElementById("glCanvas");
+            var gl = canvas.getContext("webgl2");
+
+            
+            // var squareOfTriangles = [
+            //     -0.5,  0.5,  0.0, 
+            //     0.5,  0.5,  0.0, 
+            //     0.5, -0.5,  0.0, 
+
+            //     -0.5,  0.5,  0.0,
+            //     0.5, -0.5,  0.0,
+            //     -0.5, -0.5,  0.0 
+            // ];
+
+            //console.log(squareOfTriangles);
+
+            // TODO: We need to write a vertix shader to take our points and place in the webgl
+            // // default "stage" or "viewing volume"
+            var vertShaderSrcCode = 
+            `
+            attribute vec3 aPosition;
+            void main()
+            {
+                gl_Position = vec4(aPosition, 1.0);
+            }
+            `;
+            
+            // The hidden.js script will execute the rest of the code needed to render the scene
+            
+
+
+        </script>
+
+        <script src="hidden.js"></script>
+        
+    </body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<body>
+  <canvas id="glCanvas" width="1000" height="1000"></canvas>
+
+  <script>
+    // create WebGL2 context and expose it globally for hidden.js
+    var canvas = document.getElementById("glCanvas");
+    var gl = canvas.getContext("webgl2");
+  </script>
+
+  <script src="hidden.js"></script>
+</body>
+</html>
