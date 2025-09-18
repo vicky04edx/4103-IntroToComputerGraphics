@@ -230,13 +230,13 @@ const triangleColors = [
     [0.8, 0.4, 0.0],       // Main building - orange
     
     // Triangle 6 
-    [0.8, 0.4, 0.0],      // Left tower - darker orange
+    [0.8, 0.4, 0.0],      // Left tower - orange
     
     // Triangle 7 
-    [0.8, 0.4, 0.0],      // Left tower - darker orange
+    [0.8, 0.4, 0.0],      // Left tower - orange
     
     // Triangle 8 
-    [0.8, 0.4, 0.0],      // Left tower - darker orange
+    [0.8, 0.4, 0.0],      // Left tower - orange
     
     // Triangle 9 
     [0.55, 0.27, 0.07],    // Tree trunk - brown
