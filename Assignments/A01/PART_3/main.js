@@ -60,4 +60,4 @@ gl.lineWidth(2.0);
 gl.uniform3fv(colorLoc, [0.0, 0.0, 0.0]); // Black outlines
 
 // Draw all the outline lines
-gl.drawArrays(gl.LINES, 0, lineVertices.length / 3);
+gl.drawArrays(gl.LINES, 0, lineVertices.length / 3); 
