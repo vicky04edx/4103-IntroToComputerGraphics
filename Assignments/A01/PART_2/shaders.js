@@ -1,3 +1,13 @@
+// Victoria Heredia
+// Fall 2025
+// CMPS 4213 - Dr. Mohomud Eldefrawy 
+
+// Disclaimer: Both shaders in this program were modified from the shaders 
+//             we used in the Labs during class time. 
+//
+// Note: I added the uniform declaration with help from ChatGPT 
+//       since I was unsure how to use this new variable at first.
+
 // Vertex shader
 var vertShaderSrc = `
     attribute vec3 aPosition;
@@ -7,9 +17,10 @@ var vertShaderSrc = `
 `;
 
 // Fragment shader with uniform color
+
 var fragShaderSrc = `
     precision mediump float;
-    uniform vec3 uColor;
+    uniform vec3 uColor;   
     void main() {
         gl_FragColor = vec4(uColor, 1.0);
     }

@@ -1,5 +1,17 @@
-// This file contains the arrays for triangles (vertices), colors (triangleColors), and outlines (lineVertices)
-const vertices = [
+// Victoria Heredia
+// Fall 2025
+// CMPS 4213 - Dr. Mahmoud Eldefrawy 
+//
+// Description: 
+//   This file contains the arrays for triangles (vertices), 
+//   colors (triangleColors), and outlines (lineVertices). 
+//   All values were hardcoded based on my sketches from Part 3 
+//   of the assignment. 
+//
+// Note: I separated these arrays into a different file to keep 
+//       the project more organized and make main.js focus only 
+//       on the WebGL logic.
+vertices = [
     // Triangle 1 
     -0.9, -0.9, 0.0,
      0.9, -0.4, 0.0,
@@ -213,7 +225,7 @@ const vertices = [
 ];
 
 //Triangle colors 
-const triangleColors = [
+triangleColors = [
     // Triangle 1 
     [0.8, 0.4, 0.0],       // Building base - orange
 
@@ -342,36 +354,36 @@ const triangleColors = [
 ];
 
 // Line vertices for outlines
-const lineVertices = [
+lineVertices = [
     // Building base outline
-    -0.9, -0.9, 0.0,  0.9, -0.9, 0.0,  // Bottom
-     0.9, -0.9, 0.0,  0.9, -0.4, 0.0,  // Right
-     0.9, -0.4, 0.0, -0.9, -0.4, 0.0,  // Top
-    -0.9, -0.4, 0.0, -0.9, -0.9, 0.0,  // Left
+    -0.9, -0.9, 0.0,  0.9, -0.9, 0.0,  
+     0.9, -0.9, 0.0,  0.9, -0.4, 0.0,  
+     0.9, -0.4, 0.0, -0.9, -0.4, 0.0,  
+    -0.9, -0.4, 0.0, -0.9, -0.9, 0.0,  
 
     // Main building outline
-    -0.5, -0.4, 0.0,  0.5, -0.4, 0.0,  // Bottom
-     0.5, -0.4, 0.0,  0.5,  0.0, 0.0,  // Right
-     0.5,  0.0, 0.0,  0.0,  0.4, 0.0,  // Right roof
-     0.0,  0.4, 0.0, -0.5,  0.0, 0.0,  // Left roof
-    -0.5,  0.0, 0.0, -0.5, -0.4, 0.0,  // Left
+    -0.5, -0.4, 0.0,  0.5, -0.4, 0.0,  
+     0.5, -0.4, 0.0,  0.5,  0.0, 0.0,  
+     0.5,  0.0, 0.0,  0.0,  0.4, 0.0,  
+     0.0,  0.4, 0.0, -0.5,  0.0, 0.0,  
+    -0.5,  0.0, 0.0, -0.5, -0.4, 0.0,  
 
     // Left tower outline
-    -0.7, -0.4, 0.0, -0.4, -0.4, 0.0,  // Bottom
-    -0.4, 0.076, 0.0, -0.4,  0.4, 0.0,  // Right
-    -0.4,  0.4, 0.0, -0.55, 0.55, 0.0, // Right roof
-    -0.55, 0.55, 0.0, -0.692,  0.41, 0.0, // Left roof
-    -0.7,  0.001, 0.0, -0.7, -0.4, 0.0,  // Left
+    -0.7, -0.4, 0.0, -0.4, -0.4, 0.0,  
+    -0.4, 0.076, 0.0, -0.4,  0.4, 0.0, 
+    -0.4,  0.4, 0.0, -0.55, 0.55, 0.0, 
+    -0.55, 0.55, 0.0, -0.692,  0.41, 0.0, 
+    -0.7,  0.001, 0.0, -0.7, -0.4, 0.0,
 
     // Tree outline
-     0.75, -0.4, 0.0,  0.8, -0.4, 0.0, // Bottom
-     0.8,  -0.4, 0.0,  0.8,  0.0, 0.0, // Right
-     0.75, -0.4, 0.0,  0.75, 0.0, 0.0, // Left
+     0.75, -0.4, 0.0,  0.8, -0.4, 0.0,
+     0.8,  -0.4, 0.0,  0.8,  0.0, 0.0,
+     0.75, -0.4, 0.0,  0.75, 0.0, 0.0, 
 
     // Tree (green part) outline
-     0.65, 0.0, 0.0,  0.755, 1, 0.0,   // Left
-     0.755, 1, 0.0,   0.9,   0.0, 0.0, // Right
-     0.9, 0.0, 0.0,   0.65, 0.0, 0.0,  //Bottom 
+     0.65, 0.0, 0.0,  0.755, 1, 0.0,   
+     0.755, 1, 0.0,   0.9,   0.0, 0.0, 
+     0.9, 0.0, 0.0,   0.65, 0.0, 0.0,   
 
 
     // Sun outlines
@@ -443,13 +455,13 @@ const lineVertices = [
      0.8,-0.6, 0.0,  0.6,-0.5, 0.0,
 
      // Tree outline
-    -0.75, -0.4, 0.0, -0.8, -0.4, 0.0, // Bottom
-    -0.8,  -0.4, 0.0, -0.8,  0.0, 0.0, // Right
-    -0.75, -0.4, 0.0, -0.75, 0.0, 0.0, // Left
+    -0.75, -0.4, 0.0, -0.8, -0.4, 0.0, 
+    -0.8,  -0.4, 0.0, -0.8,  0.0, 0.0, 
+    -0.75, -0.4, 0.0, -0.75, 0.0, 0.0, 
 
     // Tree (green part) outline
-    -0.65, 0.0, 0.0, -0.755, 1, 0.0,   // Left
-    -0.755, 1, 0.0,  -0.9,   0.0, 0.0, // Right
-    -0.9, 0.0, 0.0,  -0.65, 0.0, 0.0,  //Bottom 
+    -0.65, 0.0, 0.0, -0.755, 1, 0.0,   
+    -0.755, 1, 0.0,  -0.9,   0.0, 0.0, 
+    -0.9, 0.0, 0.0,  -0.65, 0.0, 0.0,  
 
 ];
